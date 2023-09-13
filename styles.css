@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+:root {
+  --ff: "Red Hat Display", sans-serif;
+
+  --clr-primary-100: #8fe3f9;
+  --clr-primary-200: #d9b8ff;
+  --clr-primary-300: #4d96a9;
+  --clr-primary-400: #855fb1;
+
+  --clr-neutral-100: #fafafa;
+  --clr-neutral-200: #87879d;
+  --clr-neutral-300: #28283d;
+
+  --fw-normal: 500;
+  --fw-bold: 900;
+
+  --fs-100: 1rem;
+  --fs-200: 1.125rem;
+  --fs-300: 2.5rem;
+  --fs-400: 4rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--ff);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-normal);
+  line-height: 1.625rem;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Aeonik medium";
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+button {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-100);
+  border: none;
+  height: 3.8rem;
+  padding: 0.6rem 2.3rem;
+  border-radius: 2rem;
+}
+
+/* utility Classes */
+.clr-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.bg-clr-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+
+.bg-clr-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+
+.clr-primary-200 {
+  color: var(--clr-primary-200);
+}
+
+.clr-primary-300 {
+  color: var(--clr-primary-300);
+}
+
+.bg-clr-primary-300 {
+  background-color: var(--clr-primary-300);
+}
+
+.bg-clr-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+
+.clr-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.clr-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.clr-neutral-300 {
+  color: var(--clr-neutral-300);
+}
+
+.fw-normal {
+  font-weight: var(--fw-normal);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.display-flex {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.display-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.max-width {
+  max-width: 69.375rem;
+  margin: auto;
+}
+
+.line-height-44px {
+  line-height: 2.75rem;
+}
+
+.line-height-64px {
+  line-height: 4rem;
+}
+
+/* General Styling */
+p {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-normal);
+}
+
+header,
+section,
+.photos,
+article {
+  margin-top: 4rem;
+}
+
+.logo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  max-width: 33.75rem;
+}
+
+.info {
+  text-align: center;
+}
+
+.mobileBanner {
+  display: none;
+}
+
+.more-info {
+  text-align: center;
+  max-width: 33.75rem;
+}
+
+.pin-1 {
+  margin-top: 8rem;
+}
+
+.pin-2 {
+  z-index: 100;
+  position: relative;
+  bottom: -1.7rem;
+}
+
+footer {
+  min-height: 19.25rem;
+  background: url(images/footer-background.svg);
+}
+
+footer div {
+  min-height: 19.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div p,
+footer div h1 {
+  max-width: 21.875rem;
+}
+
+footer div button {
+  border: none;
+}
