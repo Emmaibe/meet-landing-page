@@ -7,6 +7,8 @@
   --clr-primary-200: #d9b8ff;
   --clr-primary-300: #4d96a9;
   --clr-primary-400: #855fb1;
+  --clr-primary-500: #71C0D4;
+  --clr-primary-600: #B18BDD;;
 
   --clr-neutral-100: #fafafa;
   --clr-neutral-200: #87879d;
@@ -171,6 +173,11 @@ button {
   justify-content: center;
 }
 
+.gap-13rem {
+  justify-content: space-between;
+  /* gap: 2.3rem; */
+}
+
 .display-flex-col {
   display: flex;
   flex-direction: column;
@@ -211,22 +218,57 @@ article {
   align-items: center;
 }
 
+.gallery-1,
+.gallery-2 {
+  max-width: 28.125rem;
+}
+
+.gallery-1 div:first-of-type,
+.gallery-2 div:first-of-type {
+  margin-bottom: .8rem;
+}
+
 .banner-cont {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .banner {
-  max-width: 33.75rem;
+  width: 100vw;
+  gap: 6rem;
+}
+
+.bannerBtn button:first-of-type:hover {
+  transition : .3s;
+  background-color: var(--clr-primary-500);
+  cursor: pointer;
+}
+
+.bannerBtn button:last-of-type:hover {
+  transition : .3s;
+  background-color: var(--clr-primary-600);
+  cursor: pointer;
 }
 
 .info {
+  max-width: 33.75rem;
   text-align: center;
 }
 
 .mobileBanner {
   display: none;
+}
+
+.target-1 {
+  position: relative;
+  bottom: 3.8rem;
+}
+
+.target-2 {
+  position: relative;
+  top: 3.8rem;
 }
 
 .more-info {
@@ -263,4 +305,10 @@ footer div h1 {
 
 footer div button {
   border: none;
+}
+
+footer div button:hover {
+  transition: .3s;
+  background-color: var(--clr-primary-600);
+  cursor: pointer;
 }
