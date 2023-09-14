@@ -285,6 +285,10 @@ article {
   margin-top: 8rem;
 }
 
+.photos {
+  padding-inline: 1.5rem;
+}
+
 .pin-2 {
   z-index: 100;
   position: relative;
@@ -336,5 +340,48 @@ footer div button:hover {
   .mobileBanner h1,
   .mobileBanner-p {
     margin-bottom: 2rem;
+  }
+
+  footer {
+    padding: 6rem 0 2rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  footer div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  footer div p,
+  footer div h1 {
+    max-width: 80vw;
+    text-align: center;
+  }
+}
+
+@media (max-width : 43rem) {
+  .bannerBtn {
+    flex-direction: column;
+  }
+
+  .photos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .photos div {
+    gap: 1.5rem;
+  }
+
+  .gallery-1 div:first-of-type,
+  .gallery-2 div:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  .gap-13rem {
+    gap: .5rem;
   }
 }
